@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def ${1:methodName}
+	$0
+end</string>
+	<key>name</key>
+	<string>def … end</string>
+	<key>scope</key>
+	<string>source.opal</string>
+	<key>tabTrigger</key>
+	<string>def</string>
+	<key>uuid</key>
+	<string>5E9A7A38-875C-11D9-297C-102938CBCE2E</string>
+</dict>
+</plist>
