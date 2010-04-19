@@ -92,8 +92,14 @@
 	   <key>name</key>
 	   <string>keyword.other.special-method.opal</string>
 	   <key>match</key>
-	   <string>\b(new|initialize|apply|call|prototype|constructor|length|print|require|module|system|exports)\b(?![?!])</string>
+	   <string>\b(new|initialize|apply|call|prototype|constructor|length|print|require|module|system|exports|process|console|log|global)\b</string>
 	 </dict>
+	 <dict>
+ 	   <key>name</key>
+ 	   <string>keyword.other.special-method.opal</string>
+ 	   <key>match</key>
+ 	   <string>\b(function|object|number|defined|string)\?</string>
+ 	 </dict>
 	 <dict>
 	   <key>name</key>
 	   <string>variable.other.constant.opal</string>
