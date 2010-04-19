@@ -72,7 +72,7 @@
 	   <key>name</key>
 	   <string>keyword.control.opal</string>
 	   <key>match</key>
- <string>(?&lt;!\.)\b(try|case|class|implementation|else|end|finally|for|if|in|try|catch|then|unless|until|when|while|switch|def|function|typeof|instanceof|throw)\b(?![?!])</string>
+ <string>(?&lt;!\.)\b(try|case|class|implementation|else|end|finally|for|if|in|try|catch|then|unless|until|return|when|while|switch|def|function|typeof|instanceof|throw)\b(?![?!])</string>
 	 </dict>
 	 <dict>
 	   <key>comment</key>
@@ -92,7 +92,7 @@
 	   <key>name</key>
 	   <string>keyword.other.special-method.opal</string>
 	   <key>match</key>
-	   <string>\b(new|initialize|apply|call|prototype|constructor|length)\b(?![?!])</string>
+	   <string>\b(new|initialize|apply|call|prototype|constructor|length|print|require|module|system|exports)\b(?![?!])</string>
 	 </dict>
 	 <dict>
 	   <key>name</key>
@@ -122,7 +122,7 @@
 	   <key>name</key>
 	   <string>variable.other.readwrite.instance.opal</string>
 	   <key>match</key>
-	   <string>(@)[a-zA-Z_]\w*</string>
+	   <string>(@)[a-zA-Z_$]\w*</string>
 	   <key>captures</key>
 	   <dict>
 	     <key>1</key>
@@ -132,6 +132,20 @@
 	     </dict>
 	   </dict>
 	 </dict>
+	 <dict>
+ 	   <key>name</key>
+ 	   <string>variable.other.readwrite.class.opal</string>
+ 	   <key>match</key>
+ 	   <string>(@@)[a-zA-Z_$]\w*</string>
+ 	   <key>captures</key>
+ 	   <dict>
+ 	     <key>1</key>
+ 	     <dict>
+ 	       <key>name</key>
+ 	       <string>punctuation.definition.variable.opal</string>
+ 	     </dict>
+ 	   </dict>
+ 	 </dict>
 	 <dict>
 			<key>begin</key>
 			<string>'</string>
@@ -198,6 +212,48 @@
 				</dict>
 			</array>
   	</dict>
+  	<dict>
+			<key>match</key>
+			<string>:</string>
+			<key>name</key>
+			<string>punctuation.separator.other.opal</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\;</string>
+			<key>name</key>
+			<string>punctuation.separator.statement.opal</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>,</string>
+			<key>name</key>
+			<string>punctuation.separator.object.opal</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\.|::</string>
+			<key>name</key>
+			<string>punctuation.separator.method.opal</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\{|\}</string>
+			<key>name</key>
+			<string>punctuation.section.scope.opal</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\[|\]</string>
+			<key>name</key>
+			<string>punctuation.section.array.opal</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\(|\)</string>
+			<key>name</key>
+			<string>punctuation.section.function.opal</string>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>A46E1083-F1AC-405B-8F92-37FF385F58D2</string>
