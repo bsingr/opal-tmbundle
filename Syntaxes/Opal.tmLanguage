@@ -15,6 +15,45 @@
 	<string>source.opal</string>
 	<key>patterns</key>
 	<array>
+	     <dict>
+         <key>captures</key>
+         <dict>
+           <key>1</key>
+           <dict>
+             <key>name</key>
+             <string>keyword.control.interface.opal</string>
+           </dict>
+           <key>2</key>
+           <dict>
+             <key>name</key>
+             <string>entity.name.type.interface.opal</string>
+           </dict>
+           <key>4</key>
+   				<dict>
+   					<key>name</key>
+   					<string>entity.other.inherited-class.opal</string>
+   				</dict>
+   				<key>5</key>
+   				<dict>
+   					<key>name</key>
+   					<string>punctuation.separator.inheritance.opal</string>
+   				</dict>
+   				<key>6</key>
+   				<dict>
+   					<key>name</key>
+   					<string>variable.other.object.opal</string>
+   				</dict>
+   				<key>7</key>
+   				<dict>
+   					<key>name</key>
+   					<string>punctuation.definition.variable.opal</string>
+   				</dict>
+         </dict>
+         <key>match</key>
+    <string>^\s*(interface)\s+(([.a-zA-Z0-9_:]+(\s*(&lt;)\s*[.a-zA-Z0-9_:]+)?)|((&lt;&lt;)\s*[.a-zA-Z0-9_:]+))</string>
+       <key>name</key>
+       <string>meta.interface.opal</string>
+       </dict>
     <dict>
       <key>captures</key>
       <dict>
