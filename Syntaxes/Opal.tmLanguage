@@ -111,7 +111,7 @@
 	   <key>name</key>
 	   <string>keyword.control.opal</string>
 	   <key>match</key>
- <string>(?&lt;!\.)\b(try|case|class|interface|implementation|else|end|finally|for|if|in|try|catch|then|unless|until|return|when|while|switch|def|function|typeof|instanceof|throw)\b(?![?!])</string>
+ <string>(?&lt;!\.)\b(try|case|class|interface|implementation|else|end|finally|for|if|in|try|catch|then|unless|until|return|when|while|switch|def|function|do|typeof|instanceof|throw)\b(?![?!])</string>
 	 </dict>
 	 <dict>
 	   <key>comment</key>
