@@ -50,7 +50,7 @@
    				</dict>
          </dict>
          <key>match</key>
-    <string>^\s*(interface)\s+(([.a-zA-Z0-9_:]+(\s*(&lt;)\s*[.a-zA-Z0-9_:]+)?)|((&lt;&lt;)\s*[.a-zA-Z0-9_:]+))</string>
+    <string>^\s*(interface)\s+(([.a-zA-Z0-9_:@]+(\s*(&lt;)\s*[.a-zA-Z0-9_:]+)?)|((&lt;&lt;)\s*[.a-zA-Z0-9_:]+))</string>
        <key>name</key>
        <string>meta.interface.opal</string>
        </dict>
@@ -111,7 +111,7 @@
 	   <key>name</key>
 	   <string>keyword.control.opal</string>
 	   <key>match</key>
- <string>(?&lt;!\.)\b(try|case|class|implementation|else|end|finally|for|if|in|try|catch|then|unless|until|return|when|while|switch|def|function|typeof|instanceof|throw)\b(?![?!])</string>
+ <string>(?&lt;!\.)\b(try|case|class|interface|implementation|else|end|finally|for|if|in|try|catch|then|unless|until|return|when|while|switch|def|function|typeof|instanceof|throw)\b(?![?!])</string>
 	 </dict>
 	 <dict>
 	   <key>comment</key>
@@ -299,6 +299,37 @@
 			<key>name</key>
 			<string>punctuation.section.function.opal</string>
 		</dict>
+		<dict>
+			<key>match</key>
+					<string>\b((0(x|X)[0-9a-fA-F]+)|([0-9_]+(\.[0-9_]+)?(e[+\-]?[0-9]+)?))\b</string>
+			<key>name</key>
+			<string>constant.numeric.opal</string>
+		</dict>
+		<dict>
+       <key>captures</key>
+       <dict>
+         <key>1</key>
+         <dict>
+           <key>name</key>
+           <string>keyword.control.def.opal</string>
+         </dict>
+         <key>2</key>
+         <dict>
+           <key>name</key>
+           <string>entity.name.function.opal</string>
+         </dict>
+         <key>3</key>
+ 				<dict>
+ 					<key>name</key>
+ 					<string>entity.name.function.opal</string>
+ 				</dict>
+       </dict>
+       <key>match</key>
+       <string>^\s*(def)\s+([a-zA-Z_]+)</string>
+  <!-- <string>^\s*(def)\s+(([.a-zA-Z0-9_:@]+(\s*(&lt;)\s*[.a-zA-Z0-9_:]+)?))</string> -->
+     <key>name</key>
+     <string>meta.function.opal</string>
+     </dict>
 	</array>
 	<key>uuid</key>
 	<string>A46E1083-F1AC-405B-8F92-37FF385F58D2</string>
